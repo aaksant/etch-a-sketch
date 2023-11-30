@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.grid-creation-info {
+  margin-top: 12px;
+}
+
+.grid-container {
+  margin: 25px auto 25px; 
+  width: 400px;
+  height: 400px;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-container > div {
+  flex-basis: calc(100% / var(--dimension));
+  box-sizing: border-box;
+}
