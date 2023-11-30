@@ -1,10 +1,11 @@
 const dimensionInput = document.querySelector('#dimension');
 const createGridButton = document.querySelector('.create-grid-button');
-const gridContainer = document.querySelector('.grid-container');
+
+const board = document.querySelector('.board');
 const gridCreationInfo = document.querySelector('.grid-creation-info');
 
 function createGrid() {
-  let dimension = parseInt(dimensionInput.value)
+  let dimension = parseInt(dimensionInput.value);
 
   if (dimension < 2 || dimension > 100) {
     gridCreationInfo.textContent = '2 <= grid <= 100';
@@ -14,7 +15,7 @@ function createGrid() {
 
     for (let i = 0; i < dimension ** 2; i++) {
       let grid = document.createElement('div');
-      grid.style.backgroundColor = 'skyblue';
+      grid.style.backgroundColor = 'white';
       gridContainer.appendChild(grid);
     }
 

@@ -31,7 +31,7 @@ body {
   margin-top: 12px;
 }
 
-.grid-container {
+.board{
   margin: 25px auto 25px; 
   width: 400px;
   height: 400px;
@@ -40,7 +40,7 @@ body {
   flex-wrap: wrap;
 }
 
-.grid-container > div {
+.board > div {
   flex-basis: calc(100% / var(--dimension));
   box-sizing: border-box;
 }
