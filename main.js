@@ -12,10 +12,10 @@ function createGrid() {
   let dimension = parseInt(dimensionInput.value);
 
   if (dimension < 2 || dimension > 100) {
-    gridInfo.textContent = '2 <= grid <= 100';
+    gridInfo.textContent = 'Input must be between 2 and 100, include.';
   } else {
     board.style.setProperty('--dimension', dimension);
-    gridInfo.textContent = 'Grid created';
+    gridInfo.textContent = 'Grid created. Please select color mode.';
 
     for (let i = 0; i < dimension ** 2; i++) {
       let grid = document.createElement('div');
@@ -29,7 +29,7 @@ function reset() {
   grids.forEach((grid) => grid.remove());
 
   dimensionInput.value = '';
-  gridInfo.textContent = 'Grid cleared'
+  gridInfo.textContent = 'Grid cleared.'
 }
 
 function fillBlack() {
