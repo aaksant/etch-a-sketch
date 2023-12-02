@@ -21,14 +21,40 @@ body {
   align-items: center;
 }
 
-.header .btn-container {
+.main-btn-container {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  margin-bottom: 12px;
 }
 
 .grid-info {
   margin-top: 12px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}
+
+.settings button {
+  width: 100px;
+  height: 30px;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.black-btn {
+  color: white;
+  background-color: black;
 }
 
 .board{
