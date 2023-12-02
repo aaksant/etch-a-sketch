@@ -10,7 +10,7 @@
 <body>
   <div class="header">
     <h1 class="title">Etch-a-sketch</h1>
-    <div class="header btn-container">
+    <div class="main-btn-container">
       <input type="text" name="dimension" id="dimension" placeholder="ex: 32">
       <button class="create-grid-button">Create grid</button>
       <button class="reset-button">Reset</button>
@@ -18,7 +18,14 @@
     <div class="grid-info"></div>
   </div>
 
-  <div class="board"></div>
+  <div class="main">
+    <div class="settings">
+      <button class="black-btn">Black</button>
+      <button class="random-color-btn">Random</button>
+      <button class="eraser">Eraser</button>
+    </div>
+    <div class="board"></div>
+  </div>
   <script src="main.js"></script>
 </body>
 </html>
